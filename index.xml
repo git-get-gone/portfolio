@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Home</title>
-<link>https://JordanPhD.com/</link>
-<atom:link href="https://JordanPhD.com/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://git-get-gone.github.io/portfolio/</link>
+<atom:link href="https://git-get-gone.github.io/portfolio/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Tue, 03 Mar 2026 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Visualizing Quantum Mechanics: 1D Box</title>
-  <link>https://JordanPhD.com/posts/professional/1dbox/</link>
+  <link>https://git-get-gone.github.io/portfolio/posts/professional/1dbox/</link>
   <description><![CDATA[ 
 
 
@@ -314,12 +314,12 @@ if (outputEl) {{
   <category>physics</category>
   <category>python</category>
   <category>quantum-mechanics</category>
-  <guid>https://JordanPhD.com/posts/professional/1dbox/</guid>
+  <guid>https://git-get-gone.github.io/portfolio/posts/professional/1dbox/</guid>
   <pubDate>Tue, 03 Mar 2026 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Paper Breakdown: Dynamics of the Dissipative Two-State System</title>
-  <link>https://JordanPhD.com/posts/papers/leggit-spin/</link>
+  <link>https://git-get-gone.github.io/portfolio/posts/papers/leggit-spin/</link>
   <description><![CDATA[ 
 
 
@@ -642,12 +642,12 @@ if (outputEl) {{
   <category>physics</category>
   <category>spin-boson</category>
   <category>paper-review</category>
-  <guid>https://JordanPhD.com/posts/papers/leggit-spin/</guid>
+  <guid>https://git-get-gone.github.io/portfolio/posts/papers/leggit-spin/</guid>
   <pubDate>Tue, 03 Mar 2026 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Bible Sentiment Analysis</title>
-  <link>https://JordanPhD.com/posts/fun/bible-sentiment/</link>
+  <link>https://git-get-gone.github.io/portfolio/posts/fun/bible-sentiment/</link>
   <description><![CDATA[ 
 
 
@@ -689,13 +689,13 @@ font-style: inherit;">'compound'</span>]</span></code></pre></div></div>
   <category>python</category>
   <category>NLP</category>
   <category>personal-project</category>
-  <guid>https://JordanPhD.com/posts/fun/bible-sentiment/</guid>
+  <guid>https://git-get-gone.github.io/portfolio/posts/fun/bible-sentiment/</guid>
   <pubDate>Wed, 25 Feb 2026 05:00:00 GMT</pubDate>
-  <media:content url="https://JordanPhD.com/posts/fun/bible-sentiment/Bible.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://git-get-gone.github.io/portfolio/posts/fun/bible-sentiment/Bible.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Wordle Solver</title>
-  <link>https://JordanPhD.com/posts/fun/wordle-solver/</link>
+  <link>https://git-get-gone.github.io/portfolio/posts/fun/wordle-solver/</link>
   <description><![CDATA[ 
 
 
@@ -728,9 +728,9 @@ font-style: inherit;">'compound'</span>]</span></code></pre></div></div>
  ]]></description>
   <category>python</category>
   <category>personal-project</category>
-  <guid>https://JordanPhD.com/posts/fun/wordle-solver/</guid>
+  <guid>https://git-get-gone.github.io/portfolio/posts/fun/wordle-solver/</guid>
   <pubDate>Wed, 25 Feb 2026 05:00:00 GMT</pubDate>
-  <media:content url="https://JordanPhD.com/posts/fun/wordle-solver/wordle.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://git-get-gone.github.io/portfolio/posts/fun/wordle-solver/wordle.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

@@ -1,1 +1,1 @@
-Sitemap: https://JordanPhD.com/sitemap.xml
+Sitemap: https://git-get-gone.github.io/portfolio/sitemap.xml

@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am Physics PhD student at Rensselaer Polytechic Institute focusing on Quantum Information. I love learning new things and finding answer or developing insight in a whole range of problems."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Portfolio",
+    "section": "",
+    "text": "Visualizing Quantum Mechanics: 1D Box\n\n\n\nphysics\n\npython\n\nquantum-mechanics\n\n\n\nInteractive Plotly visualization of wave functions and probability densities for a particle in a 1D box.\n\n\n\n\n\nMar 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPaper Breakdown: Dynamics of the Dissipative Two-State System\n\n\n\nphysics\n\nspin-boson\n\npaper-review\n\n\n\nAn interactive visualization of the spin-boson model and quantum decoherence.\n\n\n\n\n\nMar 3, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBible Sentiment Analysis\n\n\n\npython\n\nNLP\n\npersonal-project\n\n\n\nA quick NLP project tracking sentiment across different books.\n\n\n\n\n\nFeb 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWordle Solver\n\n\n\npython\n\npersonal-project\n\n\n\nA simple algorithm that tries to solve wordle problems.\n\n\n\n\n\nFeb 25, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Details about the spin-boson model simulations will go here."
+  },
+  {
+    "objectID": "posts/bible-sentiment/index.html",
+    "href": "posts/bible-sentiment/index.html",
+    "title": "Bible Sentiment Analysis",
+    "section": "",
+    "text": "Curious about the full code? Check out the GitHub Repository here.\n\nThe Goal\nI wanted to see if we could quantify the emotional highs and lows across different books of the Bible using Natural Language Processing (NLTK) and pandas.\n\n\nThe Approach\nInstead of showing all the messy data cleaning, here is the core function that actually calculates the sentiment score for a given verse:\nfrom nltk.sentiment import SentimentIntensityAnalyzer\n\ndef get_verse_sentiment(text):\n    sia = SentimentIntensityAnalyzer()\n    return sia.polarity_scores(text)['compound']"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Welcome to my project gallery."
+  },
+  {
+    "objectID": "research.html#poster-presentations",
+    "href": "research.html#poster-presentations",
+    "title": "Research",
+    "section": "Poster Presentations",
+    "text": "Poster Presentations"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nRensselaer Polytechnic Institute (2025 - Present) PhD Physics\nSt. Olaf College (2021 - 2025) BA in Mathematics and Physics, Concentration in Statstics and Data Sciece"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\nCV"
+  },
+  {
+    "objectID": "research.html#publications-presentations",
+    "href": "research.html#publications-presentations",
+    "title": "Research",
+    "section": "Publications & Presentations",
+    "text": "Publications & Presentations"
+  },
+  {
+    "objectID": "research.html#current-work",
+    "href": "research.html#current-work",
+    "title": "Research",
+    "section": "",
+    "text": "Details about the spin-boson model simulations will go here."
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications"
+  },
+  {
+    "objectID": "projects.html#professional-academic",
+    "href": "projects.html#professional-academic",
+    "title": "Projects",
+    "section": "Professional & Academic",
+    "text": "Professional & Academic\nFormal models, quantitative analysis, and research-focused code. Visualized Quantum Mechanics (1D Box wave functions?, legendre plots)\n\n\n\n\n\n\n\n\nVisualizing Quantum Mechanics: 1D Box\n\n\nInteractive Plotly visualization of wave functions and probability densities for a particle in a 1D box.\n\n\n\n\n\n\nMar 3, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html#for-fun",
+    "href": "projects.html#for-fun",
+    "title": "Projects",
+    "section": "For Fun",
+    "text": "For Fun\nExplorations, random ideas, and passion projects.\n\n\n\n\n\n\n\n\n\n\nBible Sentiment Analysis\n\n\nA quick NLP project tracking sentiment across different books.\n\n\n\n\n\n\nFeb 25, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nWordle Solver\n\n\nA simple algorithm that tries to solve wordle problems.\n\n\n\n\n\n\nFeb 25, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/fun/bible-sentiment/index.html",
+    "href": "posts/fun/bible-sentiment/index.html",
+    "title": "Bible Sentiment Analysis",
+    "section": "",
+    "text": "Curious about the full code? Check out the GitHub Repository here.\n\nThe Goal\nI wanted to see if we could quantify the emotional highs and lows across different books of the Bible using Natural Language Processing (NLTK) and pandas.\n\n\nThe Approach\nInstead of showing all the messy data cleaning, here is the core function that actually calculates the sentiment score for a given verse:\nfrom nltk.sentiment import SentimentIntensityAnalyzer\n\ndef get_verse_sentiment(text):\n    sia = SentimentIntensityAnalyzer()\n    return sia.polarity_scores(text)['compound']"
+  },
+  {
+    "objectID": "about.html#about",
+    "href": "about.html#about",
+    "title": "About",
+    "section": "",
+    "text": "I am Physics PhD student at Rensselaer Polytechic Institute focusing on Quantum Information. I love learning new things and finding answer or developing insight in a whole range of problems."
+  },
+  {
+    "objectID": "posts/fun/wordle-solver/index.html",
+    "href": "posts/fun/wordle-solver/index.html",
+    "title": "Wordle Solver",
+    "section": "",
+    "text": "View the Source Code on GitHub\nWordle is essentially a game of managing uncertainty. While humans play it using intuition and vocabulary, a computer can play it by mathematically minimizing the search space.\nThis project is an ongoing exploration of algorithmic efficiency, tracking the evolution of a custom Python Wordle solver."
+  },
+  {
+    "objectID": "projects.html#paper-breakdown",
+    "href": "projects.html#paper-breakdown",
+    "title": "Projects",
+    "section": "Paper Breakdown",
+    "text": "Paper Breakdown\nExplorations, random ideas, and passion projects.\n\n\n\n\n\n\n\n\nPaper Breakdown: Dynamics of the Dissipative Two-State System\n\n\nAn interactive visualization of the spin-boson model and quantum decoherence.\n\n\n\n\n\n\nMar 3, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/papers/leggit-spin/index.html",
+    "href": "posts/papers/leggit-spin/index.html",
+    "title": "Paper Breakdown: Dynamics of the Dissipative Two-State System",
+    "section": "",
+    "text": "Leggett’s 1987 paper is the foundational text for understanding how a perfect quantum two-state system loses its coherence when it interacts with a noisy environment (the bath).\nUse the slider below to increase the coupling strength (\\(\\alpha\\)) and watch the system transition from coherent oscillations into purely overdamped decay.\n\n\nCode\nimport numpy as np\nimport plotly.graph_objects as go\n\nt = np.linspace(0, 10, 500)\nalphas = np.arange(0.0, 1.05, 0.05) \n\nfig = go.Figure()\n\nfor alpha in alphas:\n    if alpha &lt; 0.5:\n        gamma = 2 * alpha\n        P_t = np.exp(-gamma * t) * np.cos(2 * np.pi * t)\n    else:\n        gamma = 2 * alpha\n        P_t = np.exp(-gamma * t)\n        \n    fig.add_trace(\n        go.Scatter(\n            visible=False,\n            line=dict(color=\"#2c3e50\", width=3),\n            name=f\"α={alpha:.2f}\",\n            x=t,\n            y=P_t\n        )\n    )\n\nfig.data[0].visible = True\n\nsteps = []\nfor i in range(len(fig.data)):\n    step = dict(\n        method=\"update\",\n        args=[{\"visible\": [False] * len(fig.data)},\n              {\"title\": f\"Quantum State Coherence (Coupling α = {alphas[i]:.2f})\"}],\n        label=f\"{alphas[i]:.2f}\"\n    )\n    step[\"args\"][0][\"visible\"][i] = True  \n    steps.append(step)\n\nsliders = [dict(\n    active=0,\n    currentvalue={\"prefix\": \"Coupling α: \"},\n    pad={\"t\": 50},\n    steps=steps\n)]\n\nfig.update_layout(\n    sliders=sliders,\n    yaxis_range=[-1.1, 1.1],\n    xaxis_title=\"Time\",\n    yaxis_title=\"⟨σ_z(t)⟩\",\n    template=\"simple_white\",\n    height=500\n)\n\nfig.show()"
+  },
+  {
+    "objectID": "posts/professional/1dbox/index.html",
+    "href": "posts/professional/1dbox/index.html",
+    "title": "Visualizing Quantum Mechanics: 1D Box",
+    "section": "",
+    "text": "The “Particle in a 1D Box” is usually the very first problem encountered in quantum mechanics. It describes a particle free to move in a small space surrounded by impenetrable barriers.\nThe probability of finding the particle at a specific position \\(x\\) is given by the square of its wave function:\n\\[|\\psi_n(x)|^2 = \\frac{2}{L} \\sin^2\\left(\\frac{n \\pi x}{L}\\right)\\]\nUse the slider below to change the principal quantum number (\\(n\\)) and observe how the probability density shifts. Notice that as \\(n\\) increases, the number of “nodes” (places where the probability is zero) also increases!\n\n\nCode\nimport numpy as np\nimport plotly.graph_objects as go\n\nL = 1.0  # Length of the box\nx = np.linspace(0, L, 500)\nns = [1, 2, 3, 4, 5] # Quantum numbers to explore\n\nfig = go.Figure()\n\n# Calculate and plot the probability density for each n\nfor n in ns:\n    psi = np.sqrt(2/L) * np.sin(n * np.pi * x / L)\n    prob = psi**2\n    \n    fig.add_trace(\n        go.Scatter(\n            visible=(n == 1), # Only show n=1 initially\n            line=dict(color=\"#2c3e50\", width=3),\n            name=f\"n={n}\",\n            x=x,\n            y=prob\n        )\n    )\n\n# Create the slider steps\nsteps = []\nfor i, n in enumerate(ns):\n    step = dict(\n        method=\"update\",\n        args=[{\"visible\": [False] * len(ns)},\n              {\"title\": f\"Probability Density |ψ(x)|² (Quantum Number n = {n})\"}],\n        label=f\"{n}\"\n    )\n    step[\"args\"][0][\"visible\"][i] = True  \n    steps.append(step)\n\nsliders = [dict(\n    active=0,\n    currentvalue={\"prefix\": \"Energy Level (n): \"},\n    pad={\"t\": 50},\n    steps=steps\n)]\n\nfig.update_layout(\n    sliders=sliders,\n    xaxis_title=\"Position inside the box (x/L)\",\n    yaxis_title=\"Probability Density |ψ(x)|²\",\n    template=\"simple_white\",\n    height=500\n)\n\nfig.show()"
+  },
+  {
+    "objectID": "projects.html#paper-breakdowns",
+    "href": "projects.html#paper-breakdowns",
+    "title": "Projects",
+    "section": "Paper Breakdown",
+    "text": "Paper Breakdown\nExplorations, random ideas, and passion projects.\n\n\n\n\n\n\n\n\nPaper Breakdown: Dynamics of the Dissipative Two-State System\n\n\nAn interactive visualization of the spin-boson model and quantum decoherence.\n\n\n\n\n\n\nMar 3, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/fun/wordle-solver/index.html#version-1.0-the-greedy-approach-current",
+    "href": "posts/fun/wordle-solver/index.html#version-1.0-the-greedy-approach-current",
+    "title": "Wordle Solver",
+    "section": "Version 1.0: The Greedy Approach (Current)",
+    "text": "Version 1.0: The Greedy Approach (Current)\nThe initial build of this solver relies on a procedural, “greedy” algorithm. It evaluates a list of possible answers and selects the word that maximizes the immediate number of “Green” and “Yellow” hits.\nWhile effective at finding an answer within 6 guesses, a purely greedy algorithm often falls into traps—it optimizes for the current turn rather than setting up the optimal board state for the next turn."
+  },
+  {
+    "objectID": "posts/fun/wordle-solver/index.html#the-roadmap-future-implementations",
+    "href": "posts/fun/wordle-solver/index.html#the-roadmap-future-implementations",
+    "title": "Wordle Solver",
+    "section": "The Roadmap: Future Implementations",
+    "text": "The Roadmap: Future Implementations\nTo refine the solver and consistently beat the human average, the architecture is being overhauled to incorporate probabilistic models and data structures:\n\nObject-Oriented Refactoring: Transitioning the codebase into a WordleSolver class to allow for 10,000+ game Monte Carlo simulations to benchmark algorithmic efficiency.\nThe Sieve Method: Implementing a strict filtering mechanism to dynamically shrink the possible word list after every guess.\nDouble-Letter Logic: Fixing edge-case bugs surrounding words with duplicate letters (a notorious hurdle in Wordle engines).\nShannon Entropy Maximization: Upgrading the guessing logic from a greedy approach to an information-theoretic model. The algorithm will calculate the expected information gain (in bits) for every possible word, selecting the guess that mathematically eliminates the largest portion of the remaining search space."
+  }
+]

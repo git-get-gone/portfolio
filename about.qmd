@@ -1,0 +1,33 @@
+---
+title: "About"
+about:
+  template: trestles
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jepvick/
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+
+
+## About
+
+I am Physics PhD student at Rensselaer Polytechic Institute focusing on Quantum Information. I love learning new things and finding answer or developing insight in a whole range of problems. 
+
+## Education
+
+Rensselaer Polytechnic Institute (2025 - Present)
+PhD Physics
+
+St. Olaf College (2021 - 2025)
+BA in Mathematics and Physics, Concentration in Statstics and Data Sciece
+
+## Experience
+
+[CV](CV_Feb26.pdf){width=100%}
+
+

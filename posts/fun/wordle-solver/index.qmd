@@ -1,0 +1,32 @@
+---
+title: "Wordle Solver"
+description: "A simple algorithm that tries to solve wordle problems."
+date: "2026-02-25"
+categories: [python, personal-project]
+image: "wordle.jpg"
+format:
+  html:
+    toc: true
+---
+
+[View the Source Code on GitHub](https://github.com/yourusername/wordle-solver)
+
+Wordle is essentially a game of managing uncertainty. While humans play it using intuition and vocabulary, a computer can play it by mathematically minimizing the search space. 
+
+This project is an ongoing exploration of algorithmic efficiency, tracking the evolution of a custom Python Wordle solver.
+
+## Version 1.0: The Greedy Approach (Current)
+The initial build of this solver relies on a procedural, "greedy" algorithm. It evaluates a list of possible answers and selects the word that maximizes the immediate number of "Green" and "Yellow" hits. 
+
+While effective at finding an answer within 6 guesses, a purely greedy algorithm often falls into traps—it optimizes for the *current* turn rather than setting up the optimal board state for the *next* turn.
+
+
+## The Roadmap: Future Implementations
+I have a few plans to refine the solver
+
+* Run simulations to get an average of how many time the greedy approach wins
+* Create a manual mode which gives players the next best guesses
+* **Object-Oriented Refactoring:** Transitioning the codebase into a `WordleSolver` class to allow for 10,000+ game Monte Carlo simulations to benchmark algorithmic efficiency.
+* **The Sieve Method:** Implementing a strict filtering mechanism to dynamically shrink the possible word list after every guess.
+* **Double-Letter Logic:** Fixing edge-case bugs surrounding words with duplicate letters (a notorious hurdle in Wordle engines).
+* **Shannon Entropy Maximization:** Upgrading the guessing logic from a greedy approach to an information-theoretic model. The algorithm will calculate the expected information gain (in bits) for every possible word, selecting the guess that mathematically eliminates the largest portion of the remaining search space.

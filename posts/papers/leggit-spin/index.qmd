@@ -1,0 +1,76 @@
+---
+title: "Paper Breakdown: Dynamics of the Dissipative Two-State System"
+description: "An interactive visualization of the spin-boson model and quantum decoherence."
+date: "2026-03-03"
+categories: [physics, spin-boson, paper-review]
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+Leggett's 1987 paper is the foundational text for understanding how a perfect quantum two-state system loses its coherence when it interacts with a noisy environment (the bath). 
+
+Use the slider below to increase the coupling strength ($\alpha$) and watch the system transition from coherent oscillations into purely overdamped decay.
+
+
+```{python}
+import numpy as np
+import plotly.graph_objects as go
+
+t = np.linspace(0, 10, 500)
+alphas = np.arange(0.0, 1.05, 0.05) 
+
+fig = go.Figure()
+
+for alpha in alphas:
+    if alpha < 0.5:
+        gamma = 2 * alpha
+        P_t = np.exp(-gamma * t) * np.cos(2 * np.pi * t)
+    else:
+        gamma = 2 * alpha
+        P_t = np.exp(-gamma * t)
+        
+    fig.add_trace(
+        go.Scatter(
+            visible=False,
+            line=dict(color="#2c3e50", width=3),
+            name=f"α={alpha:.2f}",
+            x=t,
+            y=P_t
+        )
+    )
+
+fig.data[0].visible = True
+
+steps = []
+for i in range(len(fig.data)):
+    step = dict(
+        method="update",
+        args=[{"visible": [False] * len(fig.data)},
+              {"title": f"Quantum State Coherence (Coupling α = {alphas[i]:.2f})"}],
+        label=f"{alphas[i]:.2f}"
+    )
+    step["args"][0]["visible"][i] = True  
+    steps.append(step)
+
+sliders = [dict(
+    active=0,
+    currentvalue={"prefix": "Coupling α: "},
+    pad={"t": 50},
+    steps=steps
+)]
+
+fig.update_layout(
+    sliders=sliders,
+    yaxis_range=[-1.1, 1.1],
+    xaxis_title="Time",
+    yaxis_title="⟨σ_z(t)⟩",
+    template="simple_white",
+    height=500
+)
+
+fig.show()
+```
+
+

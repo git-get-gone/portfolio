@@ -1,0 +1,73 @@
+---
+title: "Visualizing Quantum Mechanics: 1D Box"
+description: "Interactive Plotly visualization of wave functions and probability densities for a particle in a 1D box."
+date: "2026-03-03"
+categories: [physics, python, quantum-mechanics]
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+The "Particle in a 1D Box" is usually the very first problem encountered in quantum mechanics. It describes a particle free to move in a small space surrounded by impenetrable barriers. 
+
+The probability of finding the particle at a specific position $x$ is given by the square of its wave function:
+
+$$|\psi_n(x)|^2 = \frac{2}{L} \sin^2\left(\frac{n \pi x}{L}\right)$$
+
+Use the slider below to change the principal quantum number ($n$) and observe how the probability density shifts. Notice that as $n$ increases, the number of "nodes" (places where the probability is zero) also increases!
+
+```{python}
+import numpy as np
+import plotly.graph_objects as go
+
+L = 1.0  # Length of the box
+x = np.linspace(0, L, 500)
+ns = [1, 2, 3, 4, 5] # Quantum numbers to explore
+
+fig = go.Figure()
+
+# Calculate and plot the probability density for each n
+for n in ns:
+    psi = np.sqrt(2/L) * np.sin(n * np.pi * x / L)
+    prob = psi**2
+    
+    fig.add_trace(
+        go.Scatter(
+            visible=(n == 1), # Only show n=1 initially
+            line=dict(color="#2c3e50", width=3),
+            name=f"n={n}",
+            x=x,
+            y=prob
+        )
+    )
+
+# Create the slider steps
+steps = []
+for i, n in enumerate(ns):
+    step = dict(
+        method="update",
+        args=[{"visible": [False] * len(ns)},
+              {"title": f"Probability Density |ψ(x)|² (Quantum Number n = {n})"}],
+        label=f"{n}"
+    )
+    step["args"][0]["visible"][i] = True  
+    steps.append(step)
+
+sliders = [dict(
+    active=0,
+    currentvalue={"prefix": "Energy Level (n): "},
+    pad={"t": 50},
+    steps=steps
+)]
+
+fig.update_layout(
+    sliders=sliders,
+    xaxis_title="Position inside the box (x/L)",
+    yaxis_title="Probability Density |ψ(x)|²",
+    template="simple_white",
+    height=500
+)
+
+fig.show()
+```

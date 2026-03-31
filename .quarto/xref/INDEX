@@ -1,0 +1,38 @@
+{
+  "posts/post-with-code/index.qmd": {
+    "index.html": "06f70c7a"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "49a911e1"
+  },
+  "index.qmd": {
+    "index.html": "5dd562d3"
+  },
+  "about.qmd": {
+    "about.html": "31aaf909"
+  },
+  "research.qmd": {
+    "research.html": "9ed3903d"
+  },
+  "posts/bible-sentiment/index.qmd": {
+    "index.html": "98d09134"
+  },
+  "projects.qmd": {
+    "projects.html": "01b2e404"
+  },
+  "posts/fun/bible-sentiment/index.qmd": {
+    "index.html": "6df9885d"
+  },
+  "posts/fun/wordle-solver/index.qmd": {
+    "index.html": "69897d47"
+  },
+  "posts/papers/leggit-spin/index.ipynb": {
+    "index.html": "e641ba20"
+  },
+  "posts/papers/leggit-spin/index.qmd": {
+    "index.html": "043f85da"
+  },
+  "posts/professional/1dbox/index.qmd": {
+    "index.html": "4631efa4"
+  }
+}

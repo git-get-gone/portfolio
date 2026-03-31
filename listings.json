@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/posts/professional/1dbox/index.html",
+      "/posts/fun/bible-sentiment/index.html",
+      "/posts/fun/wordle-solver/index.html",
+      "/posts/papers/leggit-spin/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/professional/1dbox/index.html",
+      "/posts/papers/leggit-spin/index.html",
+      "/posts/fun/bible-sentiment/index.html",
+      "/posts/fun/wordle-solver/index.html"
+    ]
+  }
+]

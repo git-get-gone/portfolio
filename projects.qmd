@@ -1,12 +1,12 @@
 ---
 title: "Projects"
 listing:
-  - id: professional-projects
-    contents: "posts/professional"
-    type: grid
-    sort: "date desc"
   - id: fun-projects
     contents: "posts/fun"
+    type: grid
+    sort: "date desc"
+  - id: professional-projects
+    contents: "posts/professional"
     type: grid
     sort: "date desc"
   - id: paper-breakdown
@@ -15,25 +15,13 @@ listing:
     sort: "date desc"
 ---
 
-Welcome to my project gallery. 
+Here is an overview of my projects. This is still expanding and not everything is here yet but I am planning to flesh it out more this summer.
 
-
-```
-## Professional & Academic
-*Formal models, quantitative analysis, and research-focused code.*
-Visualized Quantum Mechanics (1D Box wave functions?, legendre plots)
+## Professional Projects
+*Projects more directly related to physics or other disciplines. 
 
 :::{#professional-projects}
 :::
-
-
-## Paper Breakdown {#paper-breakdowns}
-*Reading papers and summarising them*
-
-:::{#paper-breakdown}
-:::
-
-```
 
 ## For Fun
 *Explorations, random ideas, and passion projects.*
@@ -41,4 +29,11 @@ Visualized Quantum Mechanics (1D Box wave functions?, legendre plots)
 :::{#fun-projects}
 :::
 
+
+## Paper Breakdowns
+
+Summarised version of papers I have read
+
+:::{#paper-breakdown}
+:::
 

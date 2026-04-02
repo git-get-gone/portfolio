@@ -7,6 +7,7 @@ format:
   html:
     code-fold: true
 jupyter: python3
+image: "particle-1d-box.png"
 ---
 
 The "Particle in a 1D Box" is usually the very first problem encountered in quantum mechanics. It describes a particle free to move in a small space surrounded by impenetrable barriers. 
@@ -18,6 +19,8 @@ $$|\psi_n(x)|^2 = \frac{2}{L} \sin^2\left(\frac{n \pi x}{L}\right)$$
 Use the slider below to change the principal quantum number ($n$) and observe how the probability density shifts. Notice that as $n$ increases, the number of "nodes" (places where the probability is zero) also increases!
 
 ```{python}
+#| echo: false
+
 import numpy as np
 import plotly.graph_objects as go
 

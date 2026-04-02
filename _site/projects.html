@@ -73,34 +73,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-professional-projects .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-professional-projects'] = new List('listing-professional-projects', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-fun-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -115,6 +87,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-fun-projects'] = new List('listing-fun-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-professional-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-professional-projects'] = new List('listing-professional-projects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -211,7 +211,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="./research/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -261,16 +261,18 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome to my project gallery.</p>
-<section id="professional-academic" class="level2">
-<h2 class="anchored" data-anchor-id="professional-academic">Professional &amp; Academic</h2>
-<p><em>Formal models, quantitative analysis, and research-focused code.</em> Visualized Quantum Mechanics (1D Box wave functions?, legendre plots)</p>
+<p>Here is an overview of my projects. This is still expanding and not everything is here yet but I am planning to flesh it out more this summer.</p>
+<section id="professional-projects" class="level2">
+<h2 class="anchored" data-anchor-id="professional-projects">Professional Projects</h2>
+<p>*Projects more directly related to physics or other disciplines.</p>
 <div id="listing-professional-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGh5c2ljcyUyQ3B5dGhvbiUyQ3F1YW50dW0tbWVjaGFuaWNz" data-listing-date-sort="1772514000000" data-listing-file-modified-sort="1772568037882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="370">
+<div class="g-col-1" data-index="0" data-categories="cGh5c2ljcyUyQ3B5dGhvbiUyQ3F1YW50dW0tbWVjaGFuaWNz" data-listing-date-sort="1772514000000" data-listing-file-modified-sort="1775101651072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="372">
 <a href="./posts/professional/1dbox/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./posts/professional/1dbox/particle-1d-box.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Visualizing Quantum Mechanics: 1D Box
@@ -298,7 +300,7 @@ Mar 3, 2026
 <p><em>Explorations, random ideas, and passion projects.</em></p>
 <div id="listing-fun-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cHl0aG9uJTJDTkxQJTJDcGVyc29uYWwtcHJvamVjdA==" data-listing-date-sort="1771995600000" data-listing-file-modified-sort="1772148039897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
+<div class="g-col-1" data-index="0" data-categories="cHl0aG9uJTJDTkxQJTJDcGVyc29uYWwtcHJvamVjdA==" data-listing-date-sort="1771995600000" data-listing-file-modified-sort="1775102077705" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
 <a href="./posts/fun/bible-sentiment/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -322,7 +324,7 @@ Feb 25, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="cHl0aG9uJTJDcGVyc29uYWwtcHJvamVjdA==" data-listing-date-sort="1771995600000" data-listing-file-modified-sort="1774593369687" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="239">
+<div class="g-col-1" data-index="1" data-categories="cHl0aG9uJTJDcGVyc29uYWwtcHJvamVjdA==" data-listing-date-sort="1771995600000" data-listing-file-modified-sort="1775105115398" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="224">
 <a href="./posts/fun/wordle-solver/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -351,14 +353,16 @@ Feb 25, 2026
 </div>
 </section>
 <section id="paper-breakdowns" class="level2">
-<h2 class="anchored" data-anchor-id="paper-breakdowns">Paper Breakdown</h2>
-<p><em>Explorations, random ideas, and passion projects.</em></p>
+<h2 class="anchored" data-anchor-id="paper-breakdowns">Paper Breakdowns</h2>
+<p>Summarised version of papers I have read</p>
 <div id="listing-paper-breakdown" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGh5c2ljcyUyQ3NwaW4tYm9zb24lMkNwYXBlci1yZXZpZXc=" data-listing-date-sort="1772514000000" data-listing-file-modified-sort="1772567414138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="351">
+<div class="g-col-1" data-index="0" data-categories="cGh5c2ljcyUyQ3NwaW4tYm9zb24lMkNwYXBlci1yZXZpZXc=" data-listing-date-sort="1772514000000" data-listing-file-modified-sort="1775101998145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
 <a href="./posts/papers/leggit-spin/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./posts/papers/leggit-spin/spin_boson.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Paper Breakdown: Dynamics of the Dissipative Two-State System
@@ -459,7 +463,7 @@ Mar 3, 2026
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/your-website-url\.example\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

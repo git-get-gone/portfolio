@@ -1,12 +1,12 @@
 {
   "listingMap": {
-    "index.qmd": [
-      "posts"
-    ],
     "projects.qmd": [
       "posts/professional",
       "posts/fun",
       "posts/papers"
+    ],
+    "index.qmd": [
+      "posts"
     ]
   }
 }

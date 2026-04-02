@@ -97,7 +97,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../research.html"> 
+    <a class="nav-link" href="../../../research/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -172,22 +172,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><a href="https://github.com/yourusername/wordle-solver">View the Source Code on GitHub</a></p>
+<p><a href="https://github.com/git-get-gone/wordle-solver">View the Source Code on GitHub</a></p>
 <p>Wordle is essentially a game of managing uncertainty. While humans play it using intuition and vocabulary, a computer can play it by mathematically minimizing the search space.</p>
-<p>This project is an ongoing exploration of algorithmic efficiency, tracking the evolution of a custom Python Wordle solver.</p>
 <section id="version-1.0-the-greedy-approach-current" class="level2">
 <h2 class="anchored" data-anchor-id="version-1.0-the-greedy-approach-current">Version 1.0: The Greedy Approach (Current)</h2>
 <p>The initial build of this solver relies on a procedural, “greedy” algorithm. It evaluates a list of possible answers and selects the word that maximizes the immediate number of “Green” and “Yellow” hits.</p>
-<p>While effective at finding an answer within 6 guesses, a purely greedy algorithm often falls into traps—it optimizes for the <em>current</em> turn rather than setting up the optimal board state for the <em>next</em> turn.</p>
+<p>While somewhat effective at finding an answer within 6 guesses, a purely greedy algorithm often falls into traps as it optimizes for the <em>current</em> turn rather than setting up the optimal board state for the next turn.</p>
 </section>
 <section id="the-roadmap-future-implementations" class="level2">
 <h2 class="anchored" data-anchor-id="the-roadmap-future-implementations">The Roadmap: Future Implementations</h2>
-<p>To refine the solver and consistently beat the human average, the architecture is being overhauled to incorporate probabilistic models and data structures:</p>
+<p>I have a few plans to refine the solver:</p>
 <ul>
-<li><strong>Object-Oriented Refactoring:</strong> Transitioning the codebase into a <code>WordleSolver</code> class to allow for 10,000+ game Monte Carlo simulations to benchmark algorithmic efficiency.</li>
-<li><strong>The Sieve Method:</strong> Implementing a strict filtering mechanism to dynamically shrink the possible word list after every guess.</li>
-<li><strong>Double-Letter Logic:</strong> Fixing edge-case bugs surrounding words with duplicate letters (a notorious hurdle in Wordle engines).</li>
-<li><strong>Shannon Entropy Maximization:</strong> Upgrading the guessing logic from a greedy approach to an information-theoretic model. The algorithm will calculate the expected information gain (in bits) for every possible word, selecting the guess that mathematically eliminates the largest portion of the remaining search space.</li>
+<li>Run simulations to get an average of how many time the greedy approach wins</li>
+<li>Create a manual mode which gives players the next best guesses</li>
+<li>Transitioning the codebase into a <code>WordleSolver</code> class to allow for 10,000+ game and run simulations to benchmark algorithmic efficiency.</li>
+<li>Implementing a strict filtering mechanism to dynamically shrink the possible word list after every guess.</li>
+<li>Fixing edge-case bugs surrounding words with duplicate letters.</li>
+<li>Upgrading the guessing logic from a greedy approach to one that uses information theory. The algorithm will calculate the expected information gain (in bits) for every possible word, selecting the guess that mathematically eliminates the largest portion of the remaining search space.</li>
 </ul>
 
 
@@ -267,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/your-website-url\.example\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

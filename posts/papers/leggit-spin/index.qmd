@@ -3,18 +3,25 @@ title: "Paper Breakdown: Dynamics of the Dissipative Two-State System"
 description: "An interactive visualization of the spin-boson model and quantum decoherence."
 date: "2026-03-03"
 categories: [physics, spin-boson, paper-review]
-format:
-  html:
-    code-fold: true
-jupyter: python3
+image: spin_boson.webp
+# draft: true
+# format:
+#   html
+    # code-fold: true
+# jupyter: python3
 ---
+
+# Work in Progress
 
 Leggett's 1987 paper is the foundational text for understanding how a perfect quantum two-state system loses its coherence when it interacts with a noisy environment (the bath). 
 
+[Image Source](https://quantumzeitgeist.com/amsterdam-physicists-revolutionise-quantum-devices-with-spin-boson-systems/)
+<!-- 
 Use the slider below to increase the coupling strength ($\alpha$) and watch the system transition from coherent oscillations into purely overdamped decay.
 
 
 ```{python}
+"""
 import numpy as np
 import plotly.graph_objects as go
 
@@ -71,6 +78,7 @@ fig.update_layout(
 )
 
 fig.show()
+"""
 ```
 
-
+ -->

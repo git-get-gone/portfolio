@@ -7,18 +7,23 @@ image: "Bible.jpeg"
 ---
 
 
-Curious about the full code? [Check out the GitHub Repository here](https://github.com/yourusername/bible-sentiment).
 
 ### The Goal
-I wanted to see if we could quantify the emotional highs and lows across different books of the Bible using Natural Language Processing (NLTK) and pandas. 
+I wanted to see if we could quantify the emotional highs and lows across different books of the Bible. I am especially interested in the sentiment between the Old and New Testament. I have experience with sentiment analysis in R but will try to do this in Python using  Natural Language Processing (NLTK) and pandas.
+
+### The Data
+
+
 
 ### The Approach
-Instead of showing all the messy data cleaning, here is the core function that actually calculates the sentiment score for a given verse:
+Instead of showing all the messy data cleaning, here is the core function that actually calculates the sentiment score for a given verse
 
-```python
+
+
+<!-- ```python
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 def get_verse_sentiment(text):
     sia = SentimentIntensityAnalyzer()
     return sia.polarity_scores(text)['compound']
-```
+``` -->

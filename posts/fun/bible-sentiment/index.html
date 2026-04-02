@@ -22,41 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -132,7 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../research.html"> 
+    <a class="nav-link" href="../../../research/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
@@ -199,19 +164,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Curious about the full code? <a href="https://github.com/yourusername/bible-sentiment">Check out the GitHub Repository here</a>.</p>
 <section id="the-goal" class="level3">
 <h3 class="anchored" data-anchor-id="the-goal">The Goal</h3>
-<p>I wanted to see if we could quantify the emotional highs and lows across different books of the Bible using Natural Language Processing (NLTK) and pandas.</p>
+<p>I wanted to see if we could quantify the emotional highs and lows across different books of the Bible. I am especially interested in the sentiment between the Old and New Testament. I have experience with sentiment analysis in R but will try to do this in Python using Natural Language Processing (NLTK) and pandas.</p>
+</section>
+<section id="the-data" class="level3">
+<h3 class="anchored" data-anchor-id="the-data">The Data</h3>
 </section>
 <section id="the-approach" class="level3">
 <h3 class="anchored" data-anchor-id="the-approach">The Approach</h3>
-<p>Instead of showing all the messy data cleaning, here is the core function that actually calculates the sentiment score for a given verse:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nltk.sentiment <span class="im">import</span> SentimentIntensityAnalyzer</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_verse_sentiment(text):</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    sia <span class="op">=</span> SentimentIntensityAnalyzer()</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> sia.polarity_scores(text)[<span class="st">'compound'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Instead of showing all the messy data cleaning, here is the core function that actually calculates the sentiment score for a given verse</p>
+<!-- ```python
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+def get_verse_sentiment(text):
+    sia = SentimentIntensityAnalyzer()
+    return sia.polarity_scores(text)['compound']
+``` -->
 
 
 </section>
